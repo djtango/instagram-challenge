@@ -1,9 +1,78 @@
 Instagram Challenge
 ===================
 
-Instructions
+Installation
 -------
-* Challenge time: Friday, the entire day + the weekend if you need it
+Clone this repo using:
+```
+$ git clone git@github.com:djtango/instagram-challenge.git
+```
+
+Then change into the project directory and run bundle to install the gems:
+
+```
+$ bundle
+```
+
+After bundling, the following rails command can be used to fire up the server:
+
+```
+$ bin/rails server
+```
+
+You will also need to generate the appropriate databases using this command:
+
+```
+$ bin/rake db:create
+$ bin/rake db:create RAILS_ENV=test
+$ bin/rake db:migrate 
+$ bin/rake db:migrate RAILS_ENV=test
+```
+Technologies
+---------
+
+* Server Language: Ruby
+* MVC Framework: Rails
+* Database Language: PostgreSQL
+* ORM: ActiveRecord
+* Testing Framework: Rspec - Capybara - Poltergeist
+* Front-End: JS-JQuery
+* Sign-in Authentication: OAuth - Devise
+
+
+User Stories
+-------
+```
+As a new visitor
+So I can personalise my experience on Deonstragram
+I should be able to sign-up with Deonstagram
+```
+
+```
+As a new visitor
+So that I can sign-up quickly and safely
+Deonstagram should enable sign-in with Facebook
+```
+
+```
+As a user
+Since Deonstagram is about sharing pictures
+I should be able to upload my pictures
+```
+
+```
+As a user
+So I can discuss my thoughts on a picture
+I should be able to post comments on pictures
+```
+
+```
+As a user
+So I can quickly express my approval of a picture
+I should be able to D a photo
+```
+
+
 * Feel free to use Google, your notes, books, etc., but work on your own
 * If you refer to the solution of another coach or student, please put a link to that in your README
 * If you have a partial solution, **still check in a partial solution**
