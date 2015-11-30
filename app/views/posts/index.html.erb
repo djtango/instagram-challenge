@@ -1,9 +1,18 @@
 <% if @posts.all.any? %>
   <% @posts.all.each do |post| %>
     <h2><%= post.title %></h2>
+    <p><%= image_tag post.image.url %></p>
+    <% if post.comments.any? %>
+      <ul>
+        <% post.comments.each do |comment| %>
+          <li><%= comment.thoughts %></li>
+        <% end %>
+      </ul>
+    <% end %>
+    <p><%= link_to 'comment', new_post_comment_path(post) %></p> 
   <% end %>
 <% else %>
-  <h1>No images yet!</h1>
+  <h1>No posts yet</h1>
 <% end %>
 
-<a href='posts/new'>Add an image</a>
+<a href='/posts/new'>Add a post</a>

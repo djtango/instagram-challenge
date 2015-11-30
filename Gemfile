@@ -4,10 +4,10 @@ group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
+  gem 'poltergeist'
+  gem 'database_cleaner'
 end
 gem 'paperclip'
-gem 'poltergeist'
-gem 'database_cleaner'
 gem 'aws-sdk'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
